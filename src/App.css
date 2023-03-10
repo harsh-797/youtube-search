@@ -45,6 +45,7 @@
 
 .initial {
   align-self: flex-start;
+  height: 40px;
 }
 
 .body {
@@ -111,4 +112,9 @@
   height: 20px;
   justify-content: center;
   align-items: center;
+}
+
+.logo {
+  height: 150%;
+  width: 120%;
 }

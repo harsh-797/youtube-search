@@ -1,8 +1,7 @@
 export default function Initial() {
 	return (
 		<a className='initial' href='./'>
-			<img href='../icon.webp' alt='logo' />
-			<i></i>
+			<img src='../src/logo2.png' alt='logo' className='logo' />
 		</a>
 	);
 }
