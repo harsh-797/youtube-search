@@ -46,6 +46,7 @@
 .initial {
   align-self: flex-start;
   height: 40px;
+  padding: 10px 28px;
 }
 
 .body {
