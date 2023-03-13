@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-import Content from "./Content";
 import Actions from "./Actions";
 
 export default function Body({ data }) {
