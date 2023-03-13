@@ -67,7 +67,7 @@
 .search-box {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .search-bar {
@@ -84,10 +84,15 @@
 .search-button {
   width: 56px;
   height: 56px;
-  border-radius: 50%;
+  border-radius: 10%;
   display: flex;
   overflow: hidden;
+  border: #282c34;
   background-color: white;
+}
+
+.search-button:hover {
+  background-color: aquamarine;
 }
 .search-logo {
   height: 100%;

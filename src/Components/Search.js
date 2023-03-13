@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import * as React from "react";
 import Body from "./Body";
+import { Search as SearchIcon } from "react-feather";
 
 function fetchData(url) {
 	let status = "pending";
@@ -44,11 +45,12 @@ export default function Search() {
 					ref={inputRef}
 					placeholder={"Type something here..."}></input>
 				<button className='search-button' onClick={handleClick}>
-					<img
+					<SearchIcon className='search-logo' size={100} />
+					{/* <img
 						className='search-logo'
 						src='https://media.istockphoto.com/id/924437708/vector/magnifying-glass-icon.jpg?s=612x612&w=0&k=20&c=VXDoaQ6Ns61N2v6CsMXX-vYlG5oUY3ufoUncvUp1zNY='
 						alt='search'
-					/>
+					/> */}
 					{/* Search */}
 				</button>
 			</div>
