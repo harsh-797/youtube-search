@@ -31,7 +31,10 @@ export default function Search() {
 	// AIzaSyCc_O6z8FsqURuYStMQp4FEDApVAI2jqYA
 	const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyCc_O6z8FsqURuYStMQp4FEDApVAI2jqYA&type=video&maxResults=50&q=${query}`;
 	let data;
-	if (query) data = fetchData(url);
+
+	if (query) {
+		data = fetchData(url);
+	}
 
 	function handleClick(e) {
 		e.preventDefault();
@@ -54,12 +57,10 @@ export default function Search() {
 					{/* Search */}
 				</button>
 			</div>
-			{data ? (
+			{Boolean(data) && (
 				<React.Suspense fallback={<div>Searching...</div>}>
-					<Body data={data} />
+					<Body key={query} data={data} />
 				</React.Suspense>
-			) : (
-				""
 			)}
 		</div>
 	);
