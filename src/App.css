@@ -100,7 +100,10 @@
 }
 
 .content {
-  width: 80%;
+  /* width: 80%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
 }
 
 .video {
@@ -108,7 +111,7 @@
 }
 
 .video:hover {
-  border: 3px solid;
+  border: 10px solid hsla(74, 66%, 49%, 0.867);
 
 }
 
