@@ -32,13 +32,15 @@ export default function Body({ data }) {
 					// return <h1>Hi</h1>;
 
 					return (
-						<iframe
-							className='video'
-							width='420'
-							height='315'
-							src={src}
-							title={vid.snippet.title}
-							allowFullScreen></iframe>
+						<span className='video-wrapper'>
+							<iframe
+								className='video'
+								// width='420'
+								// height='315'
+								src={src}
+								title={vid.snippet.title}
+								allowFullScreen></iframe>
+						</span>
 					);
 				})}
 			</div>

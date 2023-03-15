@@ -106,14 +106,28 @@
   gap: 16px;
 }
 
-.video {
-  border-radius: 5px;
+.video-wrapper {
+  height: 300px;
+  width: 350px;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
+
+.video {
+  width: 100%;
+  height: 100%;
+  transition: transform 250ms;
+}
+.video-wrapper:hover .video {
+  transform: scale(1.1);
+
+}
+/* 
 .video:hover {
   border: 10px solid hsla(74, 66%, 49%, 0.867);
 
-}
+} */
 
 .actions {
   display: flex;
